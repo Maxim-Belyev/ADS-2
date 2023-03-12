@@ -7,8 +7,7 @@ double pown(double value, uint16_t n) {
     }
     if (n == 1) {
         return value;
-    }
-    else{
+    } else {
         double b = value;
         for (uint16_t i = 1; i < n; ++i) {
             b *= value;
