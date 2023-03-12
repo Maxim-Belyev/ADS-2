@@ -42,7 +42,7 @@ double sinn(double x, uint16_t count) {
 double cosn(double x, uint16_t count) {
     double cos = 1;
     for (uint16_t i = 2; i <= count; ++i) {
-        cos += pow(-1, i - 1) * (pown(x, 2 * i - 2) / fact(2 * i - 2));
+        cos += pow(-1, i - 1) * (pow(x, 2 * i - 2) / fact(2 * i - 2));
     }
     return cos;
 }
